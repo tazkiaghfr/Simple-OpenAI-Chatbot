@@ -13,4 +13,5 @@ Retrieves and displays relevant information regarding the car model requested by
 **Planned improvements:**
 
 Develop a GUI (maybe Streamlit) — yay!
+
 Update the system to (hopefully) better meet user requests :D
