@@ -22,7 +22,7 @@ def generate_answer(prompt, datam):
     datam_dict = datam.to_dict() if datam is not None else {}
     response = openai.ChatCompletion.create(
         messages = [
-            {"role": "system", "content": "seorang sales mobil yang akan menjelaskan katalog mobil berdasarkan data"},
+            {"role": "system", "content": "A car salesperson who will explain the car catalog based on data"},
             {"role": "user", "content": "prompt"},
             {"role": "assistant", "content" : json.dumps(datam_dict, cls=NpEncoder)}   
         ],
@@ -32,11 +32,11 @@ def generate_answer(prompt, datam):
 
 if __name__ == '__main__':
     while True:
-        user_input = input("masukkan model mobil: ")
+        user_input = input("Car's model: ")
         car_info = data_mobil(user_input)
 
         if car_info is not None:
             response = generate_answer(user_input, car_info)
             print(response)
         else:
-            print("Model mobil tidak ditemukan")
+            print("Model not found")
