@@ -8,7 +8,7 @@ Model for understanding user requests and generates appropriate responses.
 
 **Current capabilities of this ChatBot!** 
 
-Retrieves and displays relevant information regarding the car model requested by the user (based on provided custom data)
+Integrating the GPT model with the available data to provide dynamic responses to users based on custom data.
 
 **Planned improvements:**
 
